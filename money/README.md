@@ -1,15 +1,33 @@
 # Environment details
 
-The code in this archive was run on Mac OSX with Anaconda 1.1. 
+The code in this archive was developed in Ubuntu 20.04 (in a virtual container).
+Python version: 3.8
 
-Python version 3.8
-Pip was used to install dependancies manually
+## Setup
 
+### Install pip
 
-## Initial Setup
+Ubuntu 20.04 ships with Python 3 pre-installed. To install pip:
 
-1. download and install Python with pip https://www.python.org/downloads/
-1. Install project dependancies:
-```pip install mesa```
-```pip install -r https://raw.githubusercontent.com/projectmesa/mesa/main/examples/boltzmann_wealth_model/requirements.txt```
-1. If you want to use Jupyter Notebook to run the code, also install Jupyter
+``` bash
+sudo apt update
+sudo apt install python3-pip
+```
+
+### Install Mesa and it's the tutorial dependancies
+
+``` bash
+pip3 install mesa
+pip3 install -r https://raw.githubusercontent.com/projectmesa/mesa/main/examples/boltzmann_wealth_model/requirements.txt
+```
+
+### Run Jupyter notebook
+
+From the root folder of the archive
+
+``` bash
+jupyter notebook money/main.ipynb
+```
+
+Once the jupyter server it will give a localhost address that can be opened in a browser.
+Once opened, the tutorial code can be stepped through or run from start to finish.
