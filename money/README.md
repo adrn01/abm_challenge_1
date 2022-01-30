@@ -11,5 +11,5 @@ Pip was used to install dependancies manually
 1. download and install Python with pip https://www.python.org/downloads/
 1. Install project dependancies:
 ```pip install mesa```
-```pip install matplotlib```
+```pip install -r https://raw.githubusercontent.com/projectmesa/mesa/main/examples/boltzmann_wealth_model/requirements.txt```
 1. If you want to use Jupyter Notebook to run the code, also install Jupyter

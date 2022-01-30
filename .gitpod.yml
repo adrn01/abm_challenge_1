@@ -1,13 +1,8 @@
-# Specify docker config
-image:
-  file: .gitpod.Dockerfile
-
 # List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-  - init:
-    command: jupyter money/main.ipynb
-
-# List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
-ports:
-  - port: 3000
-    onOpen: open-preview
+  - name: Install dependancies
+    before: |
+      pip install mesa
+      pip install -r https://raw.githubusercontent.com/projectmesa/mesa/main/examples/boltzmann_wealth_model/requirements.txt
+  - name: Start Notebook
+    command: jupyter notebook money/main.ipynb --NotebookApp.allow_origin=\'$(gp url 8888)\'
