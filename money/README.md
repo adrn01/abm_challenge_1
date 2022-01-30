@@ -29,5 +29,5 @@ From the root folder of the archive
 jupyter notebook money/main.ipynb
 ```
 
-Once the jupyter server it will give a localhost address that can be opened in a browser.
+Once the jupyter server starts it will give a localhost address that can be opened in a browser.
 Once opened, the tutorial code can be stepped through or run from start to finish.
